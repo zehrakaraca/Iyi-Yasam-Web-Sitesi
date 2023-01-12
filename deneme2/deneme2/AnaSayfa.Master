@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaSayfa.master.cs" Inherits="deneme2.AnaSayfa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <style>
+        .backimg{
+            background-image:url(Img/anasayfa_foto.png);
+            width:100%;
+            height:100%;
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+        
+        #nav{
+            width: 500px;
+            margin:auto;
+        }
+        #nav ul{
+            padding:0;
+            list-style:none;
+        }
+        #nav ul li{
+            float: left;
+            text-align: center;
+            width: 150px;
+            margin: 10px;
+        }
+        #nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-family: Calibri;
+            background: #15C67B;
+            display: block;
+            padding: 20px;
+
+        }
+        #nav ul li a:hover{
+            background: #15C67B;
+            color: #000;
+        }
+        #nav ul li ul{
+            display:none;
+        }
+        #nav ul li:hover ul{
+            display:block;
+        }
+
+        
+        
+        .auto-style19 {
+            height: 100px;
+            margin-left: 3px;
+        }
+
+        
+        
+        .auto-style20 {
+            height: 95px;
+            width: 1500px;
+            margin-left: 21px;
+        }
+
+        
+        
+        .auto-style24 {
+            width: 101px;
+            height: 61px;
+        }
+        
+        
+        
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <br /><br />
+        <%--<div align="center" style="height:1024px">--%>
+
+              
+                 <div id="nav" style="background-color: #15C67B; width:1500px;" class="auto-style19" >
+                    
+
+                     <ul class="auto-style20">
+                         <li><img alt="" src="Img/logo.png" class="auto-style24" /></li>
+                         <li><a href="Giris.aspx"><strong>ANA SAYFA</strong></a></li>
+                         <li><a href="KacKalori.aspx"><strong>KAÇ KALORİ ?</strong></a></li>
+                         <li><a href="Hesaplamalar.aspx"><strong>HESAPLAMALAR</strong></a>
+                              <ul>
+                                  <li><a href="BedenKitle.aspx">Beden Kitle İndeksi</a></li>
+                                  <li><a href="HarcananEnerji.aspx">Fiziksel Aktivite ve Harcanan Enerji</a></li>
+                              </ul>
+                          </li>
+                         <li><a href="Tarifler.aspx"><strong>TARİFLER</strong></a></li>
+                         <li><a href="Iletisim.aspx"><strong>İLETİŞİM</strong></a></li>
+                     </ul>
+
+
+
+
+
+                </div>
+                
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                       
+                        </asp:ContentPlaceHolder>
+                
+
+            <%--</div>--%>
+
+       
+    </form>
+</body>
+</html>

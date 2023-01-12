@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="deneme2.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1400px;
+            height: 200px;
+            margin-left: 35px;
+        }
+        .auto-style2 {
+            height: 300px;
+            width: 375px;
+            color: #FFFFFF;
+            font-size: x-large;
+            text-align: center;
+            margin-left: 35px;
+            background-color: #009999;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 35px;
+        }
+        .auto-style4 {
+            font-size: medium;
+        }
+        .auto-style5 {
+            height: 321px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <br /><br />
+        <div>
+            &nbsp<img alt="" class="auto-style1" src="Img/adminpanel.png" /></div>
+        <div>&nbsp</div>
+        <div class="auto-style5">
+        <div ;" class="auto-style2"><strong>
+            <br />
+            MENÜLER<br />
+            </strong><br />
+            <table class="auto-style3" border="0" style="border: thin solid #FFFFFF">
+                <tr>
+                    <td class="auto-style4"><a href="AdminKategori.aspx">KATEGORİLER</a></td>
+                </tr>
+            </table>
+            <table class="auto-style3" border="0" style="border: thin solid #FFFFFF">
+                <tr>
+                    <td class="auto-style4"><a href="AdminYemek.aspx">YEMEKLER</a></td>
+                </tr>
+            </table>
+            <table class="auto-style3" border="0" style="border: thin solid #FFFFFF">
+                <tr>
+                    <td class="auto-style4"><a href="AdminMesaj.aspx">MESAJLAR</a> </td>
+                </tr>
+            </table>
+            
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

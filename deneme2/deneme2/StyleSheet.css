@@ -1,0 +1,19 @@
+﻿a:link {
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-style: normal;
+}
+
+.tb5 {
+    border: 2px solid #456879;
+    border-radius: 10px;
+    height: 22px;
+    width: 230px;
+}
+
+.fb8 {
+    border: 2px solid #777;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+}
